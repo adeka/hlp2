@@ -1,0 +1,205 @@
+html *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-size: 1920px 1080px;
+  background-attachment: fixed;
+  /*background-color: transparentize(desaturate(map-get($colors, accent), 20%), .4);*/
+  /*background-blend-mode: multiply;*/
+  color: #000;
+  /*font-family: map-get($colors, fontFam);*/
+}
+
+/* Custom page header */
+.header {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.header img{
+  margin-left: 1em;
+  float:left;
+  width: auto;/*map-get($colors, logoWidth);*/
+  height: 50px;/*map-get($colors, logoHeight);*/
+}
+.header .navButton{
+  margin: 0;
+  text-align:center;
+  float: right;
+  font-weight: bold;/*map-get($colors, navButtonFontWeight);*/
+  transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  cursor: pointer;
+  margin-top: 10px;
+}
+.header .navButton:hover{}
+
+
+.headline{
+  padding:.3em;
+  text-align: center;
+  font-size: 2.5em;
+  box-shadow: 0px 10px 30px 0px rgba(0,0,0, 0.15);
+}
+
+.noPaddingRight{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.right{
+  float: right;
+  margin-left: 1.5em;
+
+}
+
+.left{
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 0;/*map-get($colors, imagePad);*/
+}
+
+.assetSummary{
+  font-size: 1.1em;
+  margin:1em;
+  margin-right:.5em;
+  padding:1.5em;
+  border-radius: .3em;
+  overflow: auto;
+}
+.assetSummary p{
+  margin-bottom: .5em;
+}
+.assetSummary img{
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+  border-radius: .2em;
+  width: 100%;
+  height: auto;
+
+}
+.assetSummary .imgContainer{
+  position: relative;
+  width: 300px;
+}
+.assetSummary .blurb {
+  font-weight: bold;
+  color: black;/*map-get($colors, darkColor);*/
+  /*background-color: #FF9D01;/*transparentize(map-get($colors, accent), .3);*/
+  padding: 1em;
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid #FF9D01; /*darken(map-get($colors, accent), 25%);*/
+  border-bottom: 3px solid #FF9D01; /*darken(map-get($colors, accent), 25%);*/
+}
+
+
+.signup{
+  padding: 0;
+  margin-top: 1.1em;
+  margin-left: 0;
+  border-radius: .3em;
+}
+
+
+.signup form{
+  padding: 0;
+  margin: 0;
+}
+.signup h2{
+  text-align:center;
+  margin: 0;
+  padding: .75em;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+.signup .pull-right {
+  float: none !important;
+}
+.signup button{
+  float: none;
+  cursor: pointer;
+  padding-left:.75em;
+  padding-right:.75em;
+  padding-top:.5em;
+  padding-bottom:.5em;
+  font-size: 1.5em;
+  margin: 0 auto;
+  border: none;
+  border-radius: .2em;
+  transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+.signup button:hover{}
+.signup .br-native-form{
+  text-align:center;
+  padding:1em;
+  padding-top: 0;
+  width: 95%;
+  margin: auto;
+}
+.signup p{
+  margin-bottom: 1em;
+}
+.signup label{
+  padding: .25em;
+  bottom: 5px;
+  position:relative;
+}
+.signup input{
+  margin: -.3em;
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+  border: none;
+  padding: .25em;
+  padding-left: .75em;
+}
+
+
+/* Custom page footer */
+.footer {
+  border-radius: .25em;
+  text-align:center;
+}
+
+.footer div{
+  padding-left: 2.3em;
+  display: inline-block;
+  overflow: auto;
+  margin: 0 auto;
+}
+.footer aside{
+  width: 100%;
+  padding-top: .25em;
+  text-align:center;
+}
+.footer i{
+  margin-right: 1em;
+  width:1.75em;
+  height:1.75em;
+  border-radius: 50%;
+  font-size: 2em;
+  float: left;
+  padding-top: .35em;
+  transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+.footer i:hover{}
+
+/*
+    .imgContainer img{
+        width: 100% !important;
+
+    }
+
+    .imgContainer {
+        width: 100% !important;
+    }
+    */
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 600px) {
+
+  .container {
+    max-width: 1640px;
+  }
+}
