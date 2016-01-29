@@ -15,6 +15,9 @@ html, body{
     vertical-align: middle !important;
 }
 
+.bPad{
+    min-height:100px;
+}
 .specialTD{
     width: 127px;
 }
@@ -93,12 +96,36 @@ width: 100% !important;
   overflow: hidden;
 }
 
+.niceWrap{
+    margin-bottom:1em !important;
+}
+
+.niceWrap > div, .niceWrap .nicEdit-main {
+    width: 96% !important;
+
+}
+
+.save {
+    float : right;
+    position: relative;
+    bottom: 20px;
+    right: -14px;
+    height: 35px;
+    font-size: 12px;
+}
+
 #toolbox h3{
   padding-top: .3em;
-  border-bottom: 1px solid #ccc;
   color: #666;
   padding-bottom: .3em;
-  width: 96.5%;
+  width: 100%;
+    clear: left;
+  border-bottom: 2px solid #666;
+width: 96%;
+}
+
+.tarea{
+    width: 96% !important;
 }
 
 .push {
@@ -108,12 +135,14 @@ width: 100% !important;
 
 
 .client{
-    background: linear-gradient( transparent, rgba(0,0,0,.1) );
-    margin-top: 1em;
-    width: 103%;
-    position:relative;
-    margin-left:-1em;
-    overflow:auto;
+        margin-top: 1em;
+        width: 103%;
+        position: relative;
+        margin-left: -1em;
+        overflow: auto;
+        background-size: 100% 72px;
+        background: linear-gradient( transparent, rgba(0,0,0,.03) );
+
 }
 
 .client img{
@@ -183,6 +212,8 @@ width: 100% !important;
     border-left: 1px solid #DDD;
     */
 }
+
+
 
 .client .add, .client .deleteIcon{
     margin-top: .5em;
@@ -307,7 +338,7 @@ input:not([type="range"]):not([type="file"]){
   padding: 1em;
   padding-right: 0;
   width:100%;
-  border-bottom: 1px solid #EEE;
+
   overflow: auto;
 }
 
@@ -333,7 +364,7 @@ input:not([type="range"]):not([type="file"]){
   padding-right: 0;
   padding-left: 0;
   width:20%;
-  border-bottom: 1px solid #EEE;
+
   overflow: auto;
   float: left;
 }
@@ -346,7 +377,7 @@ width:90%;
   padding-right: 0;
   padding-left: 0;
   width:60%;
-  border-bottom: 1px solid #EEE;
+
   overflow: auto;
   float: left;
 }
@@ -359,7 +390,6 @@ width:90%;
   padding-right: 0;
   padding-left: 0;
   width:33.33%;
-  border-bottom: 1px solid #EEE;
   overflow: auto;
   float: left;
 }
@@ -372,7 +402,6 @@ width:90%;
   padding-right: 0;
   padding-left: 0;
   width:25%;
-  border-bottom: 1px solid #EEE;
   overflow: auto;
   float: left;
 }
@@ -385,7 +414,6 @@ width:90%;
   padding-right: 0;
   padding-left: 0;
   width:75%;
-  border-bottom: 1px solid #EEE;
   overflow: auto;
   float: left;
 }
@@ -393,16 +421,93 @@ width:90%;
   width:95%;
 }
 
+.element{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background-size: 100% 72px;
+    background: linear-gradient( transparent, rgba(0,0,0,.03) );
+    padding-top: .5em;
+    right: 4px;
+}
+
+.element:first-child{
+margin-top:1em;
+}
+.widthSlider{
+    width: 270px;
+    float: left;
+    position: relative;
+    bottom: .5em;
+}
+.element h2{
+    font-size: 20px;
+    line-height: 35px;
+    float:left;
+    width: auto;
+    margin-right:1em;
+}
+
+.element ul{
+    min-height: 50px;
+}
 
 #toolbox .col4{
   padding: 1em;
   padding-right: 0;
   padding-left: 0;
-  width:66.66%;
-  border-bottom: 1px solid #EEE;
+  width:55%;
   overflow: auto;
   float: left;
 }
+#toolbox .handleIconMod{
+    cursor:move;
+    margin-top: 3em;
+    float: left;
+    width: 10%;
+}
+.elementHandle{
+    float: left;
+    margin-right:1em;
+}
+
+.listPad{
+    padding-bottom: .5em;
+}
+
+.sortable{
+    height:70px;
+    display: flex;
+}
+
+.padLeft{
+    margin-left:3em;
+}
+
+
+.handleIcon i{
+  background-color: #b2d8ff;
+  color: white;
+  padding: .2em;
+  text-align: center;
+  border-radius: .15em;
+  font-size: 1.75em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.handleIcon i:hover{
+  background-color: #66b2ff;
+}
+
+.grey{
+    background: #CDCDCD !important;
+}
+.grey:hover{
+    background: #AAAAAA	!important;
+}
+
 #toolbox .col4 input{
   width:95%;
 }
@@ -414,7 +519,21 @@ width:90%;
     padding-left: 1em;
     display: inline-block;
 }
-
+.modalRow{
+    overflow: auto;
+    border-bottom: 1px solid #AAA;
+}
+.modalRow h4{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.modalRow button{
+    float: left;
+}
+.modalRow input{
+    float : right;
+    width: 85% !important;
+}
 #modalWrap {
     position: absolute;
     width: 100%;
@@ -435,7 +554,21 @@ width:90%;
     border-radius: 3px;
     z-index: 150;
 }
-#modalDialogue input {
+#modalDialogueWide{
+    text-align:left;
+    width: 800px;
+    height: auto;
+    overflow: auto;
+    padding: 2em;
+    background-color: #FFF;
+    border-radius: 3px;
+    z-index: 150;
+}
+.modalAdd{
+    height: 700px !important;
+    overflow-y: scroll !important;
+}
+#modalWrap input {
     padding: .85em;
     margin-top: 1em;
     margin-right: 1em;
@@ -457,18 +590,23 @@ width:90%;
     margin-left: 1em;
 }
 
+.els{
+    display: block;
+}
+
 h3 i{
     color: #777;
 }
 
 #toolbox .colHalf{
-  padding: 1em;
-  padding-right: 0;
-  padding-left: 0;
-  width:50%;
-  border-bottom: 1px solid #EEE;
-  overflow: auto;
-  float: left;
+    padding: 1em;
+    padding-right: 0;
+    padding-left: 0;
+    width:50%;
+    overflow: auto;
+    float: left;
+    height: 93px !important;
+
 }
 #toolbox .colHalf input{
   width:91%;
@@ -476,10 +614,11 @@ h3 i{
 
 #toolbox .colColor{
   padding: 1em;
+  height: 93px !important;
+
   padding-right: 0;
   padding-left: 0;
   width:50%;
-  border-bottom: 1px solid #EEE;
   overflow: auto;
   float: left;
 }
@@ -492,7 +631,6 @@ h3 i{
   padding-right: 0;
   padding-left: 0;
   width:100%;
-  border-bottom: 1px solid #EEE;
   overflow: auto;
   float: left;
 }
@@ -536,6 +674,10 @@ h3 i{
 .deleteIcon{
   width: 10%;
   float: left;
+}
+
+.right{
+    float: right;
 }
 
 .red {
@@ -625,6 +767,7 @@ h3 i{
 
 }
 .onoffswitch {
+    margin-top: .55em;
     position: relative; width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
@@ -649,24 +792,24 @@ h3 i{
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "Right";
+    content: "True";
     padding-left: 13px;
     background-color: #FFFFFF; color: #333;
 }
 .onoffswitch-inner:after {
-    content: "Left";
+    content: "False";
     padding-right: 9px;
     background-color: #FFFFFF; color: #333;
     text-align: right;
 }
 .onoffswitch-switch {
     display: block; width: 20px; margin: 6px;
-    background: #97e597;
+    background: #888;
     position: absolute; top: 0; bottom: 0;
     right: 57px;
     height:22px;
     width:22px;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {

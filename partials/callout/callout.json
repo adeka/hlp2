@@ -1,0 +1,49 @@
+{
+  "data" : {
+    "image" : "misc/DeskDebateAssetImage.jpg",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ,"links" : [ {
+      "title" : "Learn More",
+      "url" : "a"
+    }]
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "hook" : "summary",
+      "type" : "textarea"
+    } ],
+    "images" : [ {
+      "hook" : "image"
+    } ],
+    "linkHook" : "links",
+    "linkType" : "button",
+    "links" : [ {
+      "hook" : 0,
+      "type" : "button"
+    }]
+  },
+  "name" : "Asset Summary",
+  "styleInputs" : [ {
+    "hook" : "summaryBGColor",
+    "label" : "Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "summaryFontSize",
+    "label" : "Font Size",
+    "type" : "number"
+  }, {
+    "hook" : "summaryImageSize",
+    "label" : "Image Size",
+    "type" : "number"
+  }, {
+    "hook" : "summaryTextColor",
+    "label" : "Text Color",
+    "type" : "color"
+  } ],
+  "styles" : {
+    "summaryBGColor" : "#000000",
+    "summaryFontSize" : "16",
+    "summaryTextColor" : "#000000"
+  },
+  "type" : "callout"
+}

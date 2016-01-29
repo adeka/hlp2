@@ -1,0 +1,32 @@
+{
+  "data" : {
+    "analyticsCode" : "UA-XXXXX-X",
+    "backgroundImage" : "misc/beach.jpg",
+    "backgroundPosition" : "middle"
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "class" : "colHalf",
+      "hook" : "analyticsCode",
+      "type" : "text"
+    } ],
+    "images" : [ {
+      "hook" : "backgroundImage"
+    } ]
+  },
+  "name" : "Main",
+  "styleInputs" : [ {
+    "hook" : "backgroundColor",
+    "label" : "Page Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "showBackground",
+    "label" : "Show Background Image",
+    "type" : "switch"
+  } ],
+  "styles" : {
+    "backgroundColor" : "#007378",
+    "showBackground" : false
+  },
+  "type" : "main"
+}

@@ -1,0 +1,52 @@
+ {
+          "data" : {
+            "client" : "© 2016 by I-9 Advantage",
+            "footerLinks" : [ {
+              "title" : "facebook",
+              "url" : "ayy.com"
+            }, {
+              "title" : "linkedin",
+              "url" : ""
+            } ]
+          },
+          "dataInputs" : {
+            "copy" : [ {
+              "class" : "row",
+              "hook" : "client",
+              "type" : "text"
+            } ],
+            "linkHook" : "footerLinks",
+            "linkType" : "icon",
+            "links" : [ {
+              "hook" : "0",
+              "type" : "icon"
+            }, {
+              "hook" : "1",
+              "type" : "icon"
+            } ]
+          },
+          "styleInputs" : [ {
+            "hook" : "footerBackgroundColor",
+            "label" : "Footer BG Color",
+            "type" : "color"
+          }, {
+            "hook" : "footerFontSize",
+            "label" : "Footer Font Size",
+            "type" : "number"
+          }, {
+            "hook" : "footerForegroundColor",
+            "label" : "Footer Foreground Color",
+            "type" : "color"
+          }, {
+            "hook" : "footerTextColor",
+            "label" : "Footer Text Color",
+            "type" : "color"
+          } ],
+          "styles" : {
+            "footerBackgroundColor" : "#007378",
+            "footerFontSize" : "18",
+            "footerForegroundColor" : "#ffffff",
+            "footerTextColor" : "#dfdfdf"
+          },
+          "type" : "wideFooter"
+        }

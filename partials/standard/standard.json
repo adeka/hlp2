@@ -1,0 +1,31 @@
+{
+  "data" : {
+    "bg" : "misc/re.jpg",
+    "horizontal": false
+  },
+  "dataInputs" : {
+    "images" : [ {
+      "hook" : "bg"
+    } ]
+  },
+  "name" : "Standard Container",
+  "styleInputs" : [ {
+    "hook" : "backgroundColor",
+    "label" : "Page Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "showBackground",
+    "label" : "Show Background Image",
+    "type" : "switch"
+  }, {
+    "hook" : "opacity",
+    "label" : "Opacity",
+    "type" : "slider"
+  } ],
+  "styles" : {
+    "backgroundColor" : "#2e6e94",
+    "showBackground" : true,
+    "opacity" : 1
+  },
+  "type" : "container"
+}

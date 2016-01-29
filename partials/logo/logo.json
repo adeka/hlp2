@@ -1,0 +1,31 @@
+{
+  "data" : {
+    "clientURL" : "http://www.google.org/",
+    "logo" : "misc/full_logo.png"
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "class" : "row",
+      "hook" : "clientURL",
+      "type" : "text"
+    } ],
+    "images" : [ {
+      "hook" : "logo"
+    } ]
+  },
+  "name" : "Navigation",
+  "styleInputs" : [ {
+    "hook" : "logoHeight",
+    "label" : "Logo Height",
+    "type" : "number"
+  }, {
+    "hook" : "navBGColor",
+    "label" : "Nav Background Color",
+    "type" : "color"
+  }],
+  "styles" : {
+    "logoHeight" : "71",
+    "navBGColor" : "#2c2c2c"
+  },
+  "type" : "nav"
+}

@@ -1,0 +1,66 @@
+{
+  "data" : {
+    "clientURL" : "http://www.google.org/",
+    "logo" : "misc/full_logo.png",
+    "navLinks" : [ {
+      "title" : "1",
+      "url" : "asd"
+    }, {
+      "title" : "4",
+      "url" : "cvb"
+    } ]
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "class" : "row",
+      "hook" : "clientURL",
+      "type" : "text"
+    } ],
+    "images" : [],
+    "linkHook" : "navLinks",
+    "linkType" : "button",
+    "links" : [ {
+      "hook" : 0,
+      "type" : "button"
+    }, {
+      "hook" : 1,
+      "type" : "button"
+    } ]
+  },
+  "name" : "Navigation",
+  "styleInputs" : [ {
+    "hook" : "logoHeight",
+    "label" : "Logo Height",
+    "type" : "number"
+  }, {
+    "hook" : "navButtonFontSize",
+    "label" : "Button Font Size",
+    "type" : "number"
+  }, {
+    "hook" : "navButtonTextColor",
+    "label" : "Button Text Color",
+    "type" : "color"
+  }, {
+    "hook" : "navButtonHoverColor",
+    "label" : "Button Hover Color",
+    "type" : "color"
+  }, {
+    "hook" : "navBGColor",
+    "label" : "Nav Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "navButtonBGColor",
+    "label" : "Button Background Color",
+    "type" : "color"
+  } ],
+  "styles" : {
+    "navBGColor" : "#2c2c2c",
+    "navButtonBGColor" : "#2c2c2c",
+    "navButtonFontSize" : "15",
+    "navButtonHoverColor" : "#3d3d3d",
+    "navButtonPad" : "1.7em",
+    "navButtonTextColor" : "#ffffff",
+    "navButtonWidth" : "130px"
+  },
+  "type" : "nav2"
+}

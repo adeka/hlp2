@@ -1,0 +1,69 @@
+{
+  "data" : {
+    "callout" : "amazing asset here!",
+    "clientID" : "705",
+    "formID" : "7",
+    "host" : "brafton.com"
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "class" : "colHalf",
+      "hook" : "formID",
+      "type" : "text"
+    }, {
+      "class" : "colHalf",
+      "hook" : "host",
+      "type" : "text"
+    }, {
+      "class" : "row",
+      "hook" : "callout",
+      "type" : "text"
+    }, {
+      "class" : "colHalf",
+      "hook" : "clientID",
+      "type" : "text"
+    } ]
+  },
+  "name" : "Form",
+  "styleInputs" : [ {
+    "hook" : "formBGColor",
+    "label" : "Form BG Color",
+    "type" : "color"
+  }, {
+    "hook" : "formButtonBGColor",
+    "label" : "Form Button BG Color",
+    "type" : "color"
+  }, {
+    "hook" : "formButtonHoverColor",
+    "label" : "Form Button Hover Color",
+    "type" : "color"
+  }, {
+    "hook" : "formButtonTextColor",
+    "label" : "Form button Text Color",
+    "type" : "color"
+  }, {
+    "hook" : "formHeaderBGColor",
+    "label" : "Form Header BG Color",
+    "type" : "color"
+  }, {
+    "hook" : "formHeaderTextColor",
+    "label" : "Form Header Text Color",
+    "type" : "color"
+  }, {
+    "hook" : "formOpacity",
+    "label" : "Opacity",
+    "type" : "slider"
+  } ],
+  "styles" : {
+    "formAlignment" : "right",
+    "formBGColor" : "#ffffff",
+    "formButtonBGColor" : "#2c2c2c",
+    "formButtonHoverColor" : "#6b1010",
+    "formButtonTextColor" : "#ffffff",
+    "formHeaderBGColor" : "#2c2c2c",
+    "formHeaderTextColor" : "#ffffff",
+    "formOpacity" : "1"
+
+  },
+  "type" : "archForm"
+}

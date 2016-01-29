@@ -1,0 +1,30 @@
+{
+  "data" : {
+    "horizontal": false
+  },
+  "dataInputs" : {
+    "images" : [ {
+      "hook" : "bg"
+    } ]
+  },
+  "name" : "Divider",
+  "styleInputs" : [ {
+    "hook" : "backgroundColor",
+    "label" : "Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "height",
+    "label" : "Height",
+    "type" : "number"
+  }, {
+    "hook" : "opacity",
+    "label" : "Opacity",
+    "type" : "slider"
+  }],
+  "styles" : {
+    "opacity" : 1,
+    "height" : 10,
+    "backgroundColor" : "#FFFFFF"
+  },
+  "type" : "Divider"
+}

@@ -85,10 +85,6 @@
             <td class="specialTD">
 
                 <select class="imageSelect" data-path="{%=file.name%}">
-                    <option value="none"> - </option>
-                    <option value="logo">Logo</option>
-                    <option value="cta">CTA</option>
-                    <option value="backgroundImage">Background</option>
                 </select>
 
             </td>

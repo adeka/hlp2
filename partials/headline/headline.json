@@ -1,0 +1,37 @@
+{
+  "data" : {
+    "headline" : "Amazing headliner yo"
+  },
+  "dataInputs" : {
+    "copy" : [ {
+      "class" : "row",
+      "hook" : "headline",
+      "type" : "text"
+    } ]
+  },
+  "name" : "Headline",
+  "styleInputs" : [ {
+    "hook" : "headlineBGColor",
+    "label" : "Headline Background Color",
+    "type" : "color"
+  }, {
+    "hook" : "headlineTextColor",
+    "label" : "Headline Text Color",
+    "type" : "color"
+  }, {
+    "hook" : "headlineFontSize",
+    "label" : "Headline Text Color",
+    "type" : "number"
+  }, {
+    "hook" : "headlineOpacity",
+    "label" : "Headline Opacity",
+    "type" : "slider"
+  } ],
+  "styles" : {
+    "headlineBGColor" : "#000000",
+    "headlineFontSize" : "30",
+    "headlineOpacity" : "0.3",
+    "headlineTextColor" : "#ffffff"
+  },
+  "type" : "headline"
+}
